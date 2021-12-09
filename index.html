@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Drawing </title>
+</head>
+<body>
+    
+    <section id = "setting">
+        <button class ="switch" id = "switch">
+            <i class="fas fa-arrow-right fa-2x"></i>
+        </button>
+        <nav class = "overlay-content" id = "nav">
+        <p class ="content">Pick your color:</p>
+        <div class = "overlay">
+            <ul>
+            <li>
+                <div  id = "color-picker" class = "color-picker"></div>
+                <div id = "color-indicator" class = "color-indicator"></div>
+            </li>
+            <li>
+                <p class="content">brush thickness:
+                <select name="line-width" id="line-width">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                  <option value = "5">5</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                </select></p>
+            </li>
+            <li>
+                <button id ="clear" class = "clear">clear</button>
+                <button id ="save" class = "save">save</button>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+    <canvas id = "canvas-to-draw" ></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src ="script.js"></script>
+</body>
+</html>
